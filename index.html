@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="https://www.google.com/s2/favicons?domain=css-tricks.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Currency Converter</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- project heading -->
+        <div class="header">
+            <img src="logo.svg" alt="logo">
+            <header>Currency Converter</header> 
+        </div>
+        <!-- form field for get user inputs -->
+        <form action="#">
+            <div class="amount">
+                <p>Enter Amount</p>
+                <!-- input area field for receiving the amount -->
+                <input type="text" value="1">
+            </div>
+            <div class="drop-list">
+                <div class="from">
+                    <p>From</p>
+                    <!-- to select the from currency -->
+                    <div class="select-box">
+                        <i class="fa-sharp fa-solid fa-sack-dollar"></i>
+                        <select></select>
+                    </div>
+                </div>
+                <div class="icon"><i class="fas fa-exchange-alt"></i></div>
+                <div class="to">
+                    <p>To</p>
+                    <!-- select to the currency user wants to convert -->
+                    <div class="select-box">
+                        <i class="fa-solid fa-money-bill-1"></i>
+                        <select></select>
+                    </div>
+                </div>
+            </div>
+            <!-- update the converted results -->
+            <div class="exchange-rate">Getting Exchange Rate....</div>
+            <!-- button for run getExchnagerate function onclick -->
+            <button>Get Exchnage Rate</button>
+        </form>
+    </div>
+    <script src="country-list.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
